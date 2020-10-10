@@ -117,7 +117,7 @@ arro.adicionarPessoas = function(numPessoas){
       return 'O carro já está lotado!'
     }
   
-  else (totalPessoasCarro > carro.assentos) {
+  else if (totalPessoasCarro > carro.assentos) {
       return "Só cabem mais" + qtdVagas + textoPessoa;
     }
   
