@@ -108,7 +108,7 @@ mostrar quantos assentos ainda podem ser ocupados, com a frase:
 - Se couber somente mais uma pessoa, mostrar a palavra "pessoa" no retorno
 citado acima, no lugar de "pessoas".
 */
-arro.adicionarPessoas = function(numPessoas){
+carro.adicionarPessoas = function(numPessoas){
     var totalPessoasCarro = carro.quantidadePessoas + numPessoas;
     var qtdVagas = carro.assentos - carro.quantidadePessoas;
     var textoPessoa = qtdVagas === 1 ? ' pessoa' : ' pessoas!';
