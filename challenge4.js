@@ -10,22 +10,28 @@ var isTruthy = function() {
 };
 
 // Invoque a função criada acima, passando todos os tipos de valores `falsy`.
-isTruthy = (-0);
-isTruthy = (NaN);
-isTruthy = (undefined);
-isTruthy = (false);
-isTruthy = (null);
-isTruthy = ('');
-isTruthy = (0);
+isTruthy(-0);
+isTruthy(NaN);
+isTruthy(undefined);
+isTruthy(false);
+isTruthy(null);
+isTruthy('');
+isTruthy(0);
 
 
 /*
 Invoque a função criada acima passando como parâmetro 10 valores `truthy`.
 */
-isTruthy = function() {
-    return isTruthy = 10;
-};
-
+isTruthy(1);
+isTruthy("Rudimar");
+isTruthy([]);
+isTruthy({});
+isTruthy(funtion() {});
+isTruthy(10 + 10);
+isTruthy(5 + 6);
+isTruthy([1, 2, 3,]);
+isTruthy(7 - 4);
+isTruthy({1, 2, 3,});
 /*
 Declare uma variável chamada `carro`, atribuindo à ela um objeto com as
 seguintes propriedades (os valores devem ser do tipo mostrado abaixo):
