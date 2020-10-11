@@ -1,7 +1,7 @@
 // Desafio da semana #3
 
 // Declarar uma variável qualquer, que receba um objeto vazio.
-var pessoais = {}
+var pessoais = {};
 
 /*
 Declarar uma variável `pessoa`, que receba suas informações pessoais.
@@ -33,7 +33,7 @@ for chamado.
 */
 pessoa.fazerAniversario = function(){
     pessoa.idade++;
-  }
+  };
 
 
 /*
@@ -47,17 +47,17 @@ valor dessa propriedade a quantidade passada por parâmetro;
 booleano que representa "verdadeiro";
 */
 
-pessoa.andar = function(m){
-    pessoa.caminhouQuantosMetros += m;
+pessoa.andar = function(metros){
+    pessoa.caminhouQuantosMetros += metros;
     pessoa.andando = true;
-  }
+  };
 /*
 Adicione um método ao objeto `pessoa` chamado `parar`, que irá modificar o valor
 da propriedade `andando` para o valor booleano que representa "falso".
 */
 pessoa.parar = function(){
     pessoa.andando = false;
-  }
+  };
 
 /*
 Crie um método chamado `nomeCompleto`, que retorne a frase:
@@ -65,7 +65,7 @@ Crie um método chamado `nomeCompleto`, que retorne a frase:
 */
 pessoa.nomeCompleto = function(){
     return 'Olá! Meu nome ' + pessoa.nome + ' ' + pessoa.sobrenome +'!';
-  }
+  };
 
 /*
 Crie um método chamado `mostrarIdade`, que retorne a frase:
@@ -73,7 +73,7 @@ Crie um método chamado `mostrarIdade`, que retorne a frase:
 */
 pessoa.mostrarIdade = function(){
     return 'Olá, eu tenho ' + pessoa.idade + ' anos!';
-  }
+  };
 
 /*
 Crie um método chamado `mostrarPeso`, que retorne a frase:
@@ -81,7 +81,7 @@ Crie um método chamado `mostrarPeso`, que retorne a frase:
 */
 pessoa.mostrarPeso = function(){
     return 'Eu peso ' + pessoa.peso + 'Kg.';
-  }
+  };
 
 /*
 Crie um método chamado `mostrarAltura` que retorne a frase:
@@ -89,7 +89,7 @@ Crie um método chamado `mostrarAltura` que retorne a frase:
 */
 pessoa.mostrarAltura = function () {
     return 'Minha altura é ' + pessoa.altura + 'm.'
-  }
+  };
 
 /*
 Agora vamos brincar um pouco com o objeto criado:
@@ -114,7 +114,7 @@ pessoa.mostrarPeso();
 Qual a altura da pessoa? (Use a instrução para responder e comentários
 inline ao lado da instrução para mostrar qual foi a resposta retornada)
 */
-pessoa.mostrarAltura()
+pessoa.mostrarAltura();
 
 /*
 Faça a `pessoa` fazer 3 aniversários.
@@ -122,13 +122,13 @@ Faça a `pessoa` fazer 3 aniversários.
 
 pessoa.fazerAniversario();
 pessoa.fazerAniversario();
-pessoa.fazerAniversario()
+pessoa.fazerAniversario();
 /*
 Quantos anos a `pessoa` tem agora? (Use a instrução para responder e
 comentários inline ao lado da instrução para mostrar qual foi a resposta
 retornada)
 */
-pessoa.mostrarIdade()
+pessoa.mostrarIdade();
 
 /*
 Agora, faça a `pessoa` caminhar alguns metros, invocando o método `andar` 3x,
@@ -197,8 +197,8 @@ pessoa.apresentacao = function(){
     }
   
     return fraseNome + ", tenho  " + fraseIdade + ", minha altura é"   + pessoa.altura + ", meu peso é "  + pessoa.peso + " e, só hoje" + fraseTotalCaminhada;
-  }
+  };
 
 // Agora, apresente-se ;)
-pessoa.apresentacao
+pessoa.apresentacao;
 //...//
