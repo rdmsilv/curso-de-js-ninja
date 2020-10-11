@@ -38,7 +38,7 @@ seguintes propriedades (os valores devem ser do tipo mostrado abaixo):
 - `assentos` - Number - cinco por padrão
 - `quantidadePessoas` - Number - zero por padrão
 */
- var carro = {
+var carro = {
     marca: 'Hilux',
     modelo: 'Sw4',
     placa: 'RDM-0902',
@@ -54,7 +54,7 @@ Crie um método chamado `mudarCor` que mude a cor do carro conforme a cor
 passado por parâmetro.
 */
 carro.mudarCor = function() {
-   return carro.cor;
+    return carro.cor = cor;
 };
 /*
 Crie um método chamado `obterCor`, que retorne a cor do carro.
@@ -102,24 +102,24 @@ mostrar quantos assentos ainda podem ser ocupados, com a frase:
 - Se couber somente mais uma pessoa, mostrar a palavra "pessoa" no retorno
 citado acima, no lugar de "pessoas".
 */
-arro.adicionarPessoas = function(numPessoas){
+carro.adicionarPessoas = function(numPessoas){
     var totalPessoasCarro = carro.quantidadePessoas + numPessoas;
     var qtdVagas = carro.assentos - carro.quantidadePessoas;
     var textoPessoa = qtdVagas === 1 ? ' pessoa' : ' pessoas!';
   
     if (carro.quantidadePessoas === carro.assentos && totalPessoasCarro >= carro.assentos) {
-      return 'O carro já está lotado!'
+        return 'O carro já está lotado!'
     }
-  
-  else (totalPessoasCarro > carro.assentos) {
+    
+    else if (totalPessoasCarro > carro.assentos) {
       return "Só cabem mais" + qtdVagas + textoPessoa;
     }
-  
+    
     carro.quantidadePessoas += numPessoas;
     return "Já temos " + carro.quantidadePessoas + " pessoas no carro!";
   };
 
-
+  
 /*
 Agora vamos verificar algumas informações do carro. Para as respostas abaixo,
 utilize sempre o formato de invocação do método (ou chamada da propriedade),
@@ -143,7 +143,7 @@ carro.mudarCor('verde musgo');
 carro.obterCor();
 
 // Qual a marca e modelo do carro?
-carro.obeterModelo();
+carro.obeterMarcaModelo();
 
 // Adicione 2 pessoas no carro.
 carro.adicionarPessoas(2);
@@ -152,7 +152,7 @@ carro.adicionarPessoas(2);
 carro.adicionarPessoas(4);
 
 // Faça o carro encher.
-carro.adicionarPessoas(2);
+carro.adicionarPessoas();
 
 // Tire 4 pessoas do carro.
 carro.adicionarPessoas(-4);
