@@ -82,7 +82,7 @@
   
     numbers = [];
   
-    for (var int = 0; int < 20; i++) {
+    for (var int = 0; int < 20; int++) {
       if(int % 2 !== 0){
         continue;
       }
