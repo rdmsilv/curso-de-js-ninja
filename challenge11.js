@@ -86,7 +86,7 @@
       if(int % 2 !== 0){
         continue;
       }
-      numbers.push(i);
+      numbers.push(int);
     }
   
     console.log( 'Pares de 0 a 20:', numbers);
