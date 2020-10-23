@@ -3,7 +3,7 @@
     Envolva todo o código desse desafio em uma IIFE.
     Crie um arquivo chamado index.html e adicione esse script ao HTML.
     */
-  
+   
     /*
     Crie uma função construtora chamada "Person". Esse construtor deve ter
     as seguintes características:
