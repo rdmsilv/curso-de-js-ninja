@@ -64,7 +64,7 @@
     */
   
     var numbers = [];
-    for (var int = 0; int < 20; i++) {
+    for (var int = 0; int < 20; int++) {
       numbers.push(int);
         if(int > 10){
            break;
