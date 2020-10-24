@@ -40,7 +40,7 @@ Mostre no console os livros restantes.
 /*
 Converta os objetos que ficaram em `books` para strings.
 */
-books = JSON.strings(books);
+books = JSON.stringify(books);
 /*
 Mostre os livros nesse formato no console:
 */
