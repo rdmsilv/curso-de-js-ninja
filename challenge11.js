@@ -64,7 +64,7 @@
     */
   
     var numbers = [];
-    for (var int = 0; int < 20; i++) {
+    for (var int = 0; int < 20; int++) {
       numbers.push(int);
         if(int > 10){
            break;
@@ -83,10 +83,10 @@
     numbers = [];
   
     for (var int = 0; int < 20; int++) {
-      if(int % 2 !== 0){
+      if(int % 2 === 0){
         continue;
       }
-      numbers.push(i);
+      numbers.push(int);
     }
   
     console.log( 'Pares de 0 a 20:', numbers);
