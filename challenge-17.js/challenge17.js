@@ -22,7 +22,7 @@
 	no console:
 	*/
 	console.log( 'Adicionando seu nome no texto:' );
-	var regexName = /(Manuel Marques de Sousa)/;
+	var regexName = /(Rudimar Laerte souza da silva)/;
 	var myName = 'Rudimar Silva';
 	console.log(text.replace(regexName, myName));
 
